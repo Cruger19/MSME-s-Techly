@@ -867,7 +867,12 @@ body.active { overflow: hidden; }
   #DELIVERY
 \*-----------------------------------*/
 
-.delivery-content { margin-block-end: 40px; }
+.delivery-content {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-block-end: 40px; 
+position: static;}
 
 .delivery .section-title {
   max-width: 17ch;
@@ -880,10 +885,11 @@ body.active { overflow: hidden; }
 .delivery-banner {
   position: relative;
   aspect-ratio: 1 / 0.86;
+  width: 50%;
 }
 
 .delivery-img {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   transform: translateX(-80px);
@@ -1043,8 +1049,10 @@ body.active { overflow: hidden; }
 }
 
 .blog-list {
-  display: grid;
-  gap: 30px;
+  display: flex;
+  position: relative;
+  gap: 10px;
+  flex-wrap: nowrap;
 }
 
 .blog-card {

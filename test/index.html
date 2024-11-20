@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSME Dashboard</title>
+   <link rel="stylesheet" href="/style.css">
+   
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    <h1> 
+        <div class="logo">MSME App</div>
+    </h2>
+         <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#updates">Updates</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#support">Support</a></li>
+                <li><a href="#account">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Overview Section -->
+        <section id="overview" class="overview-panel">
+            <h1>Welcome to Your MSME Dashboard</h1>
+            <p>Your one-stop solution for managing and growing your business.</p>
+            
+            <div class="card">
+                <h2>Revenue</h2>
+                <p id="revenue">$10,000</p>
+            </div>
+            <div class="card">
+                <h2>Expenses</h2>
+                <p id="expenses">$4,000</p>
+            </div>
+            <div class="card">
+                <h2>Profit</h2>
+                <p id="profit">$6,000</p>
+            </div>
+        </section>
+
+        <!-- Sales Chart -->
+        <section id="sales-chart" class="chart-section">
+            <h2>Sales Performance</h2>
+            <div class="bar-graph">
+                <div class="bar" style="height: 80%;" data-label="January"></div>
+                <div class="bar" style="height: 60%;" data-label="February"></div>
+                <div class="bar" style="height: 90%;" data-label="March"></div>
+                <div class="bar" style="height: 70%;" data-label="April"></div>
+                <div class="bar" style="height: 50%;" data-label="May"></div>
+            </div>
+            <canvas id="salesChart"></canvas>
+        </section>
+
+        <!-- Quick Actions -->
+        <section id="services">
+           
+
+            <h2>Our Services</h2>
+            <ul>
+                <li>
+                    <button id="quickActions">Create Invoice</button>
+                </li>
+                
+                <li>
+                    <button id="quickActions">Request Loan</button>
+                </li>
+                <li>
+                    <button id="quickActions">Post a Job</button>
+                </li>
+            </ul>
+           
+        </section>
+
+        <!-- Metrics Section -->
+        <section id="metrics">
+            <h2>Your Business Metrics</h2>
+            <div class="metrics">
+                <div>Sales Performance: $10,000</div>
+                <div>Inventory Levels: 200 Items</div>
+            </div>
+        </section>
+        
+           <div class="metrics-container">
+        <!-- Line Graph for Profitability/Losses -->
+        <div class="graph-section">
+            <h3>Profitability/Losses</h3>
+            <div class="line-graph">
+                <!-- X-axis labels -->
+                <div class="x-axis">
+                    <span>Jan</span>
+                    <span>Feb</span>
+                    <span>Mar</span>
+                    <span>Apr</span>
+                    <span>May</span>
+                    <span>Jun</span>
+                </div>
+                
+                <!-- Graph Lines -->
+                <div class="metrics-container">
+                    <!-- Growth Metric -->
+ 
+                    <div class="point" style="left: 10%; bottom: 50%;"></div>
+                    <div class="point" style="left: 25%; bottom: 60%;"></div>
+                    <div class="point" style="left: 40%; bottom: 30%;"></div>
+                    <div class="point" style="left: 55%; bottom: 70%;"></div>
+                    <div class="point" style="left: 70%; bottom: 90%;"></div>
+                    <div class="point" style="left: 85%; bottom: 50%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pie Chart for Growth -->
+        <div class="graph-section">
+            <h3>Growth</h3>
+            <div class="pie-chart">
+                <div class="slice slice-1"></div>
+                <div class="slice slice-2"></div>
+                <div class="slice slice-3"></div>
+                <div class="center"></div>
+                <canvas id="lineGraph"></canvas>
+            </div>
+        </div>
+    </div
+
+        
+        
+      <!-- 
+        - #BLOG
+      -->
+<!-- Additional Sections -->
+        <section id="updates">
+            <h1>LATEST UPDATES</h1>
+        
+        </section>
+      <section class="section section-divider white blog" id="blog">
+        <div class="container">
+
+          
+
+          <h2 class="h2 section-title">
+            Stay informed about new regulations, funding opportunities <span class="span">& Technology</span>
+          </h2>
+
+          <h3 class="h2 section-title">
+            Technology For Empowering  <span class="span">businesses.</span>
+          </h3>
+
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner">
+                  <img src="B TECH.png" width="600" height="390" loading="lazy"
+                    alt="What Do You Think About Business & Tech?" class="w-100">
+
+                  <div class="badge">Tech</div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="card-meta-wrapper">
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time class="meta-info" datetime="2022-01-01">May 13 2024</time>
+                    </a>
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <p class="meta-info">Sarah M</p>
+                    </a>
+
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">The Power of Technology: Transforming MSMEs in the Digital Age</a>
+                  </h3>
+
+                  <p class="card-text">
+                    This blog post discusses how technology has become essential for MSMEs to remain competitive. 
+                    It explores various digital tools that can help streamline operations, enhance customer engagement, and drive sales.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner">
+                  <img src="sale sum.jpg" width="600" height="390" loading="lazy"
+                    alt="Making Sales." class="w-100">
+
+                  <div class="badge">Sales</div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="card-meta-wrapper">
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time class="meta-info" datetime="2022-01-01">Jun 11 2024</time>
+                    </a>
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <p class="meta-info">Jonathan Smith</p>
+                    </a>
+
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Marketing Strategies for MSMEs to Boost Sales.</a>
+                  </h3>
+
+                  <p class="card-text">
+                    This article provides actionable marketing strategies that MSMEs can implement to increase visibility and drive sales. 
+                    It covers both traditional and digital marketing methods tailored for small businesses.
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner">
+                  <img src="images (2).jpg" width="600" height="390" loading="lazy"
+                    alt="planning." class="w-100">
+
+                  <div class="badge">planning</div>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="card-meta-wrapper">
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time class="meta-info" datetime="2022-01-01">Aug 12 2024</time>
+                    </a>
+
+                    <a href="#" class="card-meta-link">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <p class="meta-info">George Keith</p>
+                    </a>
+
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Navigating Financial Management: Essential </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Addresses the challenges MSMEs face in managing their finances and offers practical tips for financial planning, 
+                    budgeting, and utilizing accounting software to streamline operations..
+                  </p>
+
+                  <a href="#" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+    </article>
+  </main>
+
+        <section id="resources">
+            <h2>Resources</h2>
+            <section id="resources">
+                <div class="container">
+                  <h2 class="section-title">Access Articles, Videos, and Guides</h2>
+                  <p class="section-text">Enhance your business skills with our carefully curated resources. Start learning today!</p>
+              
+                  <div class="resources-grid">
+                    <!-- Article Card -->
+                    <div class="resource-card">
+                      <div class="resource-icon">
+                        <img src="https://via.placeholder.com/100x100" alt="Article Icon">
+                      </div>
+                      <div class="resource-content">
+                        <h3 class="resource-title">Top 10 Business Strategies</h3>
+                        <p class="resource-description">Explore the most effective strategies to grow your business in today’s competitive market.</p>
+                        <a href="#" class="resource-link">Read Article</a>
+                      </div>
+                    </div>
+              
+                    <!-- Video Card -->
+                    <div class="resource-card">
+                      <div class="resource-icon">
+                        <img src="https://via.placeholder.com/100x100" alt="Video Icon">
+                      </div>
+                      <div class="resource-content">
+                        <h3 class="resource-title">Mastering Time Management</h3>
+                        <p class="resource-description">Watch this video to learn the essential time management techniques that can transform your productivity.</p>
+                        <a href="#" class="resource-link">Watch Video</a>
+                      </div>
+                    </div>
+              
+                    <!-- Guide Card -->
+                    <div class="resource-card">
+                      <div class="resource-icon">
+                        <img src="https://via.placeholder.com/100x100" alt="Guide Icon">
+                      </div>
+                      <div class="resource-content">
+                        <h3 class="resource-title">Business Planning Guide</h3>
+                        <p class="resource-description">Download our comprehensive guide to creating a solid business plan for sustainable growth.</p>
+                        <a href="#" class="resource-link">Download Guide</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- More Resources Section -->
+                  <div class="more-resources">
+                    <p class="more-resources-text">Looking for more? <a href="#">Browse our full library of resources</a>.</p>
+                  </div>
+                </div>
+              </section>
+              
+        <section id="testimonials">
+            <section id="success-stories">
+                <div class="container">
+                  <h2 class="section-title">Success Stories</h2>
+                  <p class="section-text">Read how our clients have achieved incredible results with our services!</p>
+              
+                  <div class="stories-grid">
+                    <div class="story-card">
+                      <div class="story-image">
+                        <img src="https://via.placeholder.com/400x250" alt="Client 1">
+                      </div>
+                      <div class="story-content">
+                        <h3 class="story-title">Client Name 1</h3>
+                        <p class="story-text">"Thanks to the team, our business grew by 50% within the first quarter. The support and guidance have been exceptional!"</p>
+                        <p class="story-author">- CEO, Business XYZ</p>
+                      </div>
+                    </div>
+              
+                    <div class="story-card">
+                      <div class="story-image">
+                        <img src="https://via.placeholder.com/400x250" alt="Client 2">
+                      </div>
+                      <div class="story-content">
+                        <h3 class="story-title">Client Name 2</h3>
+                        <p class="story-text">"The solutions provided were exactly what we needed. Our online presence and sales skyrocketed after implementing the changes."</p>
+                        <p class="story-author">- Marketing Director, Company ABC</p>
+                      </div>
+                    </div>
+              
+                    <div class="story-card">
+                      <div class="story-image">
+                        <img src="https://via.placeholder.com/400x250" alt="Client 3">
+                      </div>
+                      <div class="story-content">
+                        <h3 class="story-title">Client Name 3</h3>
+                        <p class="story-text">"We saw a dramatic improvement in customer satisfaction and retention. Their approach really worked for us."</p>
+                        <p class="story-author">- Operations Manager, Global Corp</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        </section>
+
+       
+        <section id="support">
+                <div class="container">
+                  <h2 class="section-title">Need Help? We're Here for You!</h2>
+                  <p class="section-text">Our support team is available to assist you with any questions or issues you may have. Choose an option below to get the help you need.</p>
+              
+                  <div class="support-options">
+                    <!-- FAQ Option -->
+                    <div class="support-option">
+                      <div class="support-icon">
+                        <img src="https://via.placeholder.com/100x100" alt="FAQ Icon">
+                      </div>
+                      <div class="support-content">
+                        <h3 class="support-title">Frequently Asked Questions</h3>
+                        <p class="support-description">Find answers to the most common questions we receive. It’s a great place to start if you're looking for quick solutions.</p>
+                        <a href="#" class="support-link">Browse FAQs</a>
+                      </div>
+                    </div>
+              
+                    <!-- Live Chat Option -->
+                    <div class="support-option">
+                      <div class="support-icon">
+                        <img src="https://via.placeholder.com/100x100" alt="Live Chat Icon">
+                      </div>
+                      <div class="support-content">
+                        <h3 class="support-title">Live Chat</h3>
+                        <p class="support-description">Need immediate assistance? Our live chat feature connects you with a support agent in real-time.</p>
+                        <a href="#" class="support-link">Start Live Chat</a>
+                      </div>
+                    </div>
+              
+                    <!-- Submit Ticket Option -->
+                    <div class="support-option">
+                      <div class="support-icon">
+                        <img src="https://via.placeholder.com/100x100" alt="Submit Ticket Icon">
+                      </div>
+                      <div class="support-content">
+                        <h3 class="support-title">Submit a Support Ticket</h3>
+                        <p class="support-description">If you need more personalized help, submit a support ticket and our team will get back to you as soon as possible.</p>
+                        <a href="#" class="support-link">Submit a Ticket</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Contact Details -->
+                  <div class="contact-details">
+                    <p class="contact-text">Prefer to contact us directly? Reach out to our support team via email or phone:</p>
+                    <p class="contact-info"><strong>Email:</strong> support@msmetech.com</p>
+                    <p class="contact-info"><strong>Phone:</strong> +254 (722) 783-510</p>
+                  </div>
+                </div>
+              </section>
+              
+        </section>
+
+        <!-- Account Section -->
+        <section id="account">
+            <div class="container">
+                <h2 class="section-title">Account Settings</h2>
+                <p class="section-text">Manage your account preferences, update personal information, and more.</p>
+                <button class="btn">Update Profile</button>
+                <button class="btn">Change Password</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        
+        <footer class="footer">
+
+            <div class="footer-top" style="background-image: url('./images/footer-illustration.png')">
+              <div class="container">
+        
+                <div class="footer-brand">
+        
+                  <a href="" class="logo">MSMEs Techlify<span class="span"></span></a>
+        
+                  <p class="footer-text">
+                    Financial experts support or help you to to find out which way you can raise your
+                     business with the power of technology.
+                  </p>
+        
+                  <ul class="social-list">
+        
+                    <li>
+                      <a href="#" class="social-link">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                      </a>
+                    </li>
+        
+                    <li>
+                      <a href="#" class="social-link">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                      </a>
+                    </li>
+        
+                    <li>
+                      <a href="#" class="social-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                      </a>
+                    </li>
+        
+                    <li>
+                      <a href="#" class="social-link">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                      </a>
+                    </li>
+        
+                  </ul>
+        
+                </div>
+        
+                <ul class="footer-list">
+        
+                  <li>
+                    <p class="footer-list-title">Contact Info</p>
+                  </li>
+        
+                  <li>
+                    <p class="footer-list-item">+254 (722) 783-510</p>
+                  </li>
+        
+                  <li>
+                    <p class="footer-list-item">Info@fredmurue@gmail.com</p>
+                  </li>
+        
+                  <li>
+                    <address class="footer-list-item">Nairobi, Kenya</address>
+                  </li>
+        
+                </ul>
+        
+                <ul class="footer-list">
+        
+                  <li>
+                    <p class="footer-list-title">Opening Hours</p>
+                  </li>
+        
+                  <li>
+                    <p class="footer-list-item">Monday-Friday: 08:00-22:00</p>
+                  </li>
+        
+                  <li>
+                    <p class="footer-list-item">Saturday: 10:00-16:00</p>
+                  </li>
+        
+                </ul>
+        
+              
+        
+              </div>
+            </div>
+        
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            
+            <div class="footer-bottom">
+              <div class="container">
+                <p class="copyright-text">
+                    <p> MSME App..</p>
+                  &copy; 2024 <a href="#" class="copyright-link">Code_With_Cruger</a> All Rights Reserved.
+                </p>
+              </div>
+            </div>
+        
+    </footer>
+
+    <!-- JavaScript Libraries and Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
+</body>
+</html>
